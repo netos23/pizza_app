@@ -4,53 +4,29 @@ import org.springframework.data.repository.CrudRepository
 import ru.fbtw.pizzaapp.domain.IngredientAmount
 import java.util.*
 
-class IngredientAmountRepository : CrudRepository<IngredientAmount, Long> {
+interface IngredientAmountRepository : CrudRepository<IngredientAmount, Long> {
 
-    override fun findById(id: Long): Optional<IngredientAmount> {
-        TODO("Not yet implemented")
-    }
+    override fun findById(id: Long): Optional<IngredientAmount> 
 
-    override fun existsById(id: Long): Boolean {
-        TODO("Not yet implemented")
-    }
+    override fun existsById(id: Long): Boolean 
 
-    override fun <S : IngredientAmount?> save(entity: S): S {
-        TODO("Not yet implemented")
-    }
+    override fun <S : IngredientAmount?> save(entity: S): S 
 
-    override fun <S : IngredientAmount?> saveAll(entities: MutableIterable<S>): MutableIterable<S> {
-        TODO("Not yet implemented")
-    }
+    override fun <S : IngredientAmount?> saveAll(entities: MutableIterable<S>): MutableIterable<S> 
 
-    override fun findAll(): MutableIterable<IngredientAmount> {
-        TODO("Not yet implemented")
-    }
+    override fun findAll(): MutableIterable<IngredientAmount> 
 
-    override fun findAllById(ids: MutableIterable<Long>): MutableIterable<IngredientAmount> {
-        TODO("Not yet implemented")
-    }
+    override fun findAllById(ids: MutableIterable<Long>): MutableIterable<IngredientAmount> 
 
-    override fun count(): Long {
-        TODO("Not yet implemented")
-    }
+    override fun count(): Long 
 
-    override fun deleteById(id: Long) {
-        TODO("Not yet implemented")
-    }
+    override fun deleteById(id: Long) 
 
-    override fun delete(entity: IngredientAmount) {
-        TODO("Not yet implemented")
-    }
+    override fun delete(entity: IngredientAmount) 
 
-    override fun deleteAllById(ids: MutableIterable<Long>) {
-        TODO("Not yet implemented")
-    }
+    override fun deleteAllById(ids: MutableIterable<Long>) 
 
-    override fun deleteAll(entities: MutableIterable<IngredientAmount>) {
-        TODO("Not yet implemented")
-    }
+    override fun deleteAll(entities: MutableIterable<IngredientAmount>) 
 
-    override fun deleteAll() {
-        TODO("Not yet implemented")
-    }
+    override fun deleteAll() 
 }

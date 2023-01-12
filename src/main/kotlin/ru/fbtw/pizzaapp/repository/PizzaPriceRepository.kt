@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository
 import ru.fbtw.pizzaapp.domain.PizzaPrice
 import java.util.*
 
-class PizzaPriceRepository : CrudRepository<PizzaPrice, Long> {
+interface PizzaPriceRepository : CrudRepository<PizzaPrice, Long> {
     override fun <S : PizzaPrice?> save(entity: S): S {
         TODO("Not yet implemented")
     }

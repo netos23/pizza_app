@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository
 import ru.fbtw.pizzaapp.domain.User
 import java.util.*
 
-class UserRepository : CrudRepository<User, Long> {
+interface UserRepository : CrudRepository<User, Long> {
     override fun <S : User?> save(entity: S): S {
         TODO("Not yet implemented")
     }

@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository
 import ru.fbtw.pizzaapp.domain.ReceptStep
 import java.util.*
 
-class ReceptStepRepository : CrudRepository<ReceptStep, Long> {
+interface ReceptStepRepository : CrudRepository<ReceptStep, Long> {
     override fun <S : ReceptStep?> save(entity: S): S {
         TODO("Not yet implemented")
     }

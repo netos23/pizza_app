@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository
 import ru.fbtw.pizzaapp.domain.IngredientStorageInformation
 import java.util.*
 
-class IngredientStorageInformationRepository : CrudRepository<IngredientStorageInformation, Long> {
+interface IngredientStorageInformationRepository : CrudRepository<IngredientStorageInformation, Long> {
     override fun <S : IngredientStorageInformation?> save(entity: S): S {
         TODO("Not yet implemented")
     }

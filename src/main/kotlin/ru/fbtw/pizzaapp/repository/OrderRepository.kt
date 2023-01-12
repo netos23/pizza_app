@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository
 import ru.fbtw.pizzaapp.domain.Order
 import java.util.*
 
-class OrderRepository : CrudRepository<Order, Long> {
+interface OrderRepository : CrudRepository<Order, Long> {
     override fun <S : Order?> save(entity: S): S {
         TODO("Not yet implemented")
     }
